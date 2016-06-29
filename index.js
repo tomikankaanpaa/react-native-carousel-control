@@ -153,6 +153,7 @@ export default class Carousel extends Component {
                     contentContainerStyle={ [ computedStyles.scrollView ] }
                     decelerationRate={ 0.9 }
                     horizontal
+                    scrollEnabled= { this.props.children && this.props.children.length > 1 }
                     onScrollEndDrag={ this.handleScrollEnd }
                     ref={ c => this.scrollView = c }
                     showsHorizontalScrollIndicator={ false }
